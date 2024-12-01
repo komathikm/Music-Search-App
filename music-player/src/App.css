@@ -1,0 +1,196 @@
+/* body {
+  background-image: url('musicBack1.jpg');
+  background-size: cover;
+  background-position: center;} */
+
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  
+}
+
+.app-header {
+  /* background-color: #ccd6e7; */
+  color: #e0f0fd;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  border-bottom: 2px solid #ddd;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-weight: bold;
+}
+
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(  #f598c6, #FFC0CB, #FFA07A
+  );
+  color: rgb(39, 29, 44);
+}
+
+/* Add these styles in your App.css */
+.track-info {
+  text-align: center;
+  color: #f0f0f0; /* Default text color */
+}
+
+.track-info .song-title {
+  color: #03505a;
+}
+
+.track-info .artist-name {
+  color: #f801d7;
+}
+
+/* Style for the "Artists:" label */
+.artist-label {
+  color: #330122;  /* Example color for the "Artists:" label */
+  font-weight: bold;
+}
+
+/* Style for the artist name */
+.artist-name {
+  color: #f0f0f0;  /* Example color for the artist name */
+  font-style: italic;
+}
+
+
+.album-art {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* .controls {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+} */
+
+/* Remove default styles like background and border for buttons */
+.control-button {
+  background: none;  /* Ensure no background color */
+  border: none;      /* Remove border */
+  color: white;      /* Set the color of the symbol to white */
+  font-size: 20px;   /* Adjust size as needed */
+  cursor: pointer;  /* Cursor pointer for clickable buttons */
+  padding: 10px;     /* Padding around the button */
+  margin: 5px;       /* Margin between buttons */
+  transition: transform 0.2s ease-in-out;  /* Smooth hover effect */
+}
+
+/* Optional: Add hover effect without changing color */
+.control-button:hover {
+  transform: scale(1.1);  /* Slight scale-up effect */
+}
+
+
+
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.progress-bar {
+  width: 83%;
+  margin: 0 10px;
+  color: #fa90d1;
+}
+
+.playing-gif {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.playing-gif img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.volume-control {
+  margin: 10px 0;
+}
+
+.playlist {
+  border-top:2px solid #4b4747;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.playlist h3{
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgb(46, 0, 0);
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #807c7c;
+}
+
+.playlist li.active {
+  background-color: #fa90d1;
+  font-weight: bold;
+  color: white;
+}
+
+.song-title {
+  color: #030303; 
+}
+
+.artist-name {
+  color: #f8039a; 
+}
+
+
+/* Pagination Styles */
+.pagination button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #8a217c;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+/* Playlist Item Styles */
+.playlist li.active {
+  background-color: #8a217c;
+  color: white;
+  font-weight: bold;
+}
